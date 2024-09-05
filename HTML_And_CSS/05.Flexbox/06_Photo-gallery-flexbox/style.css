@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 6rem;
+    background: #ddd;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+li {
+    display: flex;
+    border: 0.8em solid black;
+    flex: 0 0 21em;
+    height: 33em;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}

@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2em 3em;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+a {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    background-color: #eee;
+    width: 2em;
+    height: 2em;
+    color: black;
+}
+
+a span {
+    display: none;
+}
+
+a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.facebook:hover {
+    color: #4267B2;
+}
+
+a.twitter:hover {
+    color: #1DA1F2;
+}
+
+a.google-plus:hover {
+    color: #db4a39;
+}
+
+a.linked-in:hover {
+    color: #0077b5;
+}
+
+a.instagram:hover i {
+    background: linear-gradient(45deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 25%, rgba(214,41,118,1) 50%, rgba(150,47,191,1) 75%, rgba(79,91,213,1) 100%);
+    background-clip: text;
+    color: transparent;
+}

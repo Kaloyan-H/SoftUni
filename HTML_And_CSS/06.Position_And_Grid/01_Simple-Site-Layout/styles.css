@@ -1,0 +1,46 @@
+body > * {
+    border-radius: 3px;
+    background: rgb(181, 216, 255);
+    padding: 5px 10px;
+}
+
+body {
+    display: grid;
+    grid-template: 3fr 6fr 1fr / repeat(5, 1fr);
+    gap: 1em
+}
+
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-area: main;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+main h1 {
+    display: inline-block;
+    align-content: middle;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+aside li a {
+    display: block;
+    padding: 5px 0;
+    color: rgb(86, 40, 129);
+    text-decoration: none;
+}

@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 20px/1.2 "Inter", sans-serif;
+}
+
+body {
+    width: 1920px;
+    height: 3626px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2em 12em;
+    color: black;
+    font-weight: 500;
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3em;
+    align-items: center;
+}
+
+.account-action-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.sign-up.button {
+    background-color: #ADE2DF;
+    border-radius: 8px;
+    padding: 0.8em 1.2em;
+}
+
+.introduction {
+    display: flex;
+    background-color: #ADE2DF;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6em 0;
+    gap: 1.5em;
+}
+
+.introduction>h1,
+.introduction>p {
+    width: 100%;
+    text-align: center;
+}
+
+.introduction>h1 {
+    font-size: 3.8em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.introduction>p {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 1em;
+    padding-top: 0.3em;
+}
+
+.introduction>a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 1.2em 1.7em;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    padding: 6em 0;
+}
+
+.stat-card {
+    display: flex;
+    width: 25%;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 1.5em;
+    gap: 2em;
+    border-left: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    padding-bottom: 6em;
+}
+
+.stat-card>h2,
+.stat-card>p {
+    width: 100%;
+    text-align: center;
+}
+
+.stat-card>h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.stat-card>p {
+    font-weight: 500;
+}
+
+.features {
+    background-color: #ADE2DF;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.features>img {
+    border: 2px dashed #98B8B6;
+    padding: 0 2em;
+}
+
+.features-text-container {
+    display: flex;
+    width: 45%;
+    padding: 0 5em;
+    flex-wrap: wrap;
+}
+
+.features-text-container>* {
+    width: 100%;
+}
+
+.features-text-container>h2 {
+    font-size: 2.6em;
+    font-weight: 600;
+    line-height: 1.4;
+    padding-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+.features-text-container>h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    padding-bottom: 0.8em;
+}
+
+.features-text-container>p {
+    padding-bottom: 2em;
+}
+
+.features-text-container>a {
+    width: fit-content;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.3em;
+}
+
+.pricing-plans {
+    background-color: #F3F5FA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2.7em 0;
+}
+
+.pricing-plans>* {
+    width: 100%;
+}
+
+.pricing-plans>a,
+.pricing-plans>h2 {
+    text-align: center;
+}
+
+.pricing-plans>a {
+    border-radius: 10px;
+    background-color: #ADE2DF;
+    width: fit-content;
+    padding: 0.5em 1em;
+}
+
+.pricing-plans>h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-top: 0.7em;
+}
+
+.plan-cards-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 8fr;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 5em;
+    padding: 0 0;
+    overflow: hidden;
+    border: 1px solid #DBDBDB;
+}
+
+.plan-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.4em 2em;
+}
+
+.plan-card>* {
+    width: 100%;
+}
+
+.plan-card>h3 {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+}
+
+.plan-card>p {
+    font-size: 1em;
+    padding-bottom: 1.2em;
+}
+
+.price {
+    font-size: 2.5em;
+    font-weight: 600;
+    
+}
+
+.full-price {
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.plan-card>ul {
+    padding: 2em 0;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.plan-card li {
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.plan-card a {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    background-color: #ADE2DF;
+    padding: 1.3em 0;
+    border-radius: 7px;
+}
+
+.standart,
+.plus {
+    border-right: 2px solid #DBDBDB;
+}
+
+.contact-us-card {
+    padding: 1.4em 2em;
+    background-color: #ADE2DF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us-card>* {
+    width: 100%;
+}
+
+.contact-us-card>a {
+    text-align: center;
+    padding: 1.3em 0;
+    background-color: black;
+    border-radius: 7px;
+    color: white;
+    height: fit-content;
+    align-self: flex-end;
+}
+
+.contact-us-card h3 {
+    text-align: center;
+}
+
+.contact-us-card p {
+    font-size: 1.3em;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.contact-us-card ul {
+    display: flex;
+    list-style-type: none;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 2em 0;
+}
+
+.contact-us-card ul>* {
+    width: 100%;
+}
+
+.get-started {
+    display: flex;
+    background-color: #ADE2DF;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6em 0;
+}
+
+.get-started h1,
+.get-started p {
+    width: 100%;
+    text-align: center;
+}
+
+.get-started h1 {
+    font-size: 3.8em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.get-started p {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 1em;
+    padding-top: 0.3em;
+}
+
+.get-started a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 1.2em 1.7em;
+}
+
+.get-started-text-container {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em 3em;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}

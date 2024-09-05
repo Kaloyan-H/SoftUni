@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    width: 7em;
+}
+

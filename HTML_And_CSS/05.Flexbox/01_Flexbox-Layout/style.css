@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+}
+
+body.site {
+    font-family: inherit;
+    background: #eee;
+    padding: 5rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site .header,
+.site .main,
+.site .aside,
+.site .footer {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0.4rem;
+    color: #000;
+    margin: 0.9rem;
+    box-shadow: 0.06rem 0.06rem 0.3rem 0.3rem #999;
+    border: solid 0px #fff;
+}
+
+.site .header,
+.site .footer {
+    flex-basis: 100%;
+}
+
+.site .header {
+    height: 10rem;
+}
+
+.site .footer {
+    height: 5rem;
+}
+
+.site .main {
+    flex: 8 1 40rem;
+    height: 37rem;
+}
+
+.site .aside {
+    flex: 2 1 20rem;
+}
+
+
+

@@ -1,0 +1,34 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "first-main aside"
+        "second-main aside";
+    gap: 2em;
+    padding: 3em 7em;
+}
+
+.first-main {
+    grid-area: first-main;
+}
+
+.first-main .image-container,
+.second-main .image-container {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.second-main {
+    grid-area: second-main;
+}
+
+.aside {
+    grid-area: aside;
+}

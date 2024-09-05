@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-style: normal;
+}
+
+html {
+    font-family: "PT Sans", sans-serif;
+}
+
+body {
+    width: 1920px;
+    height: 1867px;
+}
+
+div {
+    height: fit-content;
+}
+
+a {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.grey-text {
+    color: #999;
+}
+
+hr {
+    color: red;
+    height: 2px;
+    border-width: 0.2em;
+    width: 3%;
+    border-style: solid;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    background: red;
+    color: white;
+    font-size: 1.2em;
+}
+
+.phone-number i,
+.address i,
+.social-media i {
+    padding-right: 0.5em;
+}
+
+
+.address address {
+    display: inline-block;
+}
+
+
+.social-media span {
+    display: none;
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-rows: 4fr 3fr 4fr;
+    grid-template-areas: 
+        "banner"
+        "welcome"
+        "coaches";
+}
+
+/* Banner */
+.banner-section {
+    grid-area: banner;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.banner-section img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.banner-section nav {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 100%;
+    padding: 2em 4em;
+}
+
+.banner-section nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4em;
+    justify-content: end;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.banner-card {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner-card > * {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner-card h1 {
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    padding-bottom: 0.7em;
+}
+
+.banner-card p {
+    font-size: 1.2em;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.banner-card a {
+    background: red;
+    padding: 0.6em 1.1em;
+    font-size: 1.2em;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Welcome */
+
+.welcome-section {
+    grid-area: welcome;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.welcome-section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card-container img {
+    width: 20%;
+    height: auto;
+}
+
+.card-container p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.card-container p:nth-child(2) {
+    padding-top: 0.5em;
+} 
+
+
+/* Coaches */
+
+.coaches-section {
+    grid-area: coaches;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em 0;
+    gap: 2em;
+}
+
+.coaches-section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.article-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.article-container p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.coaches-section article {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.coaches-section article img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Footer */
+
+footer {
+    padding: 0.7em 3em;
+    background: red;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 5rem 6rem;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0,0,0);
+    padding-bottom: 1.5em;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+main h2 {
+    font-family: serif;
+    padding-top: 1em;
+}
+
+main p {
+    padding-top: 1em;
+}

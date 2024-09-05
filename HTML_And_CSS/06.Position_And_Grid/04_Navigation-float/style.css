@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/1.5 Helvetica, sans-serif;
+    background: rgb(238, 238, 238);
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 6rem;
+}
+
+/*Header*/
+
+.page > header {
+    display: flex;
+    flex: 1 0 100%;
+    padding-bottom: 1.5em;
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+}
+
+.page > header h1 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    padding: 0 0.5em;
+}
+
+/*Main*/
+
+main {
+    flex: 0 0 70%;
+}
+
+.article h2,
+.article h1 {
+    font-family: Georgia serif;
+}
+
+.article header {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.article h1 {
+    font-size: 2.5em;
+}
+
+.article h2 {
+    font-size: 2.3em;
+}
+
+.article p {
+    padding-bottom: 1.2em;
+    font-size: 1.3em;
+}
+
+.article:nth-child(2) section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article:nth-child(2) p:nth-child(1),
+.article:nth-child(2) p:nth-child(4) {
+    flex: 0 0 100%;
+}
+
+.article:nth-child(2) p:nth-child(2),
+.article:nth-child(2) blockquote {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+}
+
+.article:nth-child(2) p:nth-child(2) {
+    padding-right: 1em;
+}
+
+blockquote {
+    padding-left: 1.3em;
+    margin-bottom: 1.2em;
+    border-left: 3px solid rgb(215, 215, 215);
+    color: rgb(100, 100, 100);
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+cite {
+    padding-top: 1em;
+    float: right;
+}
+
+
+/*Aside*/
+
+aside {
+    padding-left: 5em;
+    padding-top: 1.5em;
+    flex: 0 0 20%;
+}
+
+.aside-nav h2 {
+    font-family: Georgia, serif;
+}
+
+.aside-nav li {
+    margin-left: 2.5em;
+    list-style-type: square;
+}
+
+.aside-nav {
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+img {
+    box-sizing: border-box;
+    padding: 0.5em;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.image-one {
+    float: right;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.image-two {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 2em;
+}
